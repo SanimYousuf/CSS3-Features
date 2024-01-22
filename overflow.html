@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            border: 2px solid steelblue;
+            padding: 10px;
+            margin-bottom: 15px;
+            overflow: auto;
+            overflow-x: hidden;
+        }
+        /* #box-1{
+            overflow: scroll;
+        } */
+        .ellipsis{
+            width: 250px;
+            border: 2px solid steelblue;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p title="I am a serious learner but nowadays I can't cope up with the pace of this course." class="ellipsis">I am a serious learner but nowadays I can't cope up with the pace of this course.</p>
+    </header>
+    <section>
+        <div class="box" id="box-1">
+            <h3>Text Box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem culpa, vel consequuntur voluptas nam voluptatem quia nulla accusantium nihil animi excepturi ea earum corrupti porro illum reiciendis. Veritatis, consectetur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum vero ullam perspiciatis modi! Quas, voluptas perferendis. Odio cum quod laborum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi totam impedit fugiat dicta est nulla.</p>
+        </div>
+        <div class="box">
+            <h3>Text Box 2</h3>
+            <p>Voluptatibus id iste alias officiis aut, odit perferendis aliquam nihil! Maiores repellat reprehenderit vel, repellendus est asperiores quibusdam deleniti numquam neque velit nemo cumque, provident eveniet iusto ut, aliquam commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloribus nulla inventore est deleniti odio praesentium possimus dicta sit alias eius, minima totam doloremque nemo distinctio molestiae dolor beatae minus aliquam! Magni provident qui vitae.</p>
+        </div>
+    </section>
+</body>
+</html>
